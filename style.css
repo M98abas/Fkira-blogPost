@@ -1,0 +1,362 @@
+:root{
+    --fontColor: rgb(0, 0, 0);
+    --backColor: #fff;
+    --hoverGreen: #080;
+    --footerColor: #E8E8E8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    height: 50px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--fontColor);
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+header .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    text-align: center;
+    height: 100%;
+    -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--backColor);
+}
+.container .menu{
+    list-style: none;
+    display: flex;
+    color: var(--fontColor);
+}
+.container .menu li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    color: var(--fontColor);
+
+}
+.menu li{
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.menu li:hover{
+    border-radius: 20px;
+    color: var(--hoverGreen);
+    border: 2px solid var(--fontColor);
+    transform: scale(1.1);
+}
+
+.image-containe{
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.photo-show {
+    width: 100%;
+    height: 100%;
+    animation: photoAnimation 5s infinite;
+    /* overflow: hidden; */
+}
+@keyframes photoAnimation {
+    0%{
+        transform: scale(1);
+        filter: blur(4px);
+    }
+    25%{
+        transform: scale(1.05);
+        filter: blur(2px);
+    }
+    50%{
+        transform: scale(1.01);
+        filter: blur(1px);
+
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+footer{
+    background-color: var(--footerColor);
+    align-items: center;
+    margin-top: 92px;
+    /* margin-bottom: 1px; */
+}
+
+.soctial{
+    /* margin-right:42px; */
+    justify-content: space-around;
+    display: flex;
+}
+.soctial p {
+    margin: 13px;
+}
+main{
+    position: relative;
+}
+main .container .photography{
+    padding-top:199px;
+    width: fit-content;
+}
+
+main .container .photography h1{
+    font-size: 65px;
+    color: #fff128;
+}
+
+main .container .photography p{
+    font-size: 40px;
+    color: #fff ;
+}
+.sa-main img{
+    width: 1088px;
+    height: 400px;
+}
+.first-section{
+    width: 100%;
+}
+.cards{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 50.9px;
+
+}
+.cards .card{
+    width: 328px;
+    height: 250px;
+    transition: .3s;
+}
+.cards .card:hover{
+    transform: scale(1.15);
+}
+main .cards .card img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+main .cards .card h2{
+    font-size: 25px;
+}
+.sub-conatiner{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-conatiner a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.sa-main{
+    margin-top: 40px;
+}
+.new-page h1{
+    font-size: 40px;
+}
+.sup-con h1{
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+}
+.second-section h1{
+    margin-bottom: 17px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.contnet-container p {
+    font-size: 28px;
+    margin-top: 12px;
+    color: #646464;
+    line-height: 33px;
+}
+.contnet-container p a{
+    color: black;
+}
+.therd-section{
+    font-size: 30px;
+    padding-bottom: 150px;
+}
+.new-page .section-content{
+    line-height: 32px;
+    font-size: 18px;
+    margin-bottom: 13px;
+    margin-top: 61px;
+}
+.left-title{
+    /* line-height: 13px; */
+    color: gray;
+}
+.container-of-title{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.first-section{
+    padding-top: 20px;
+    line-height: 20px;
+    color: gray;
+    font-size: 28px;
+}
+.new-container{
+    border-bottom: 1px solid #000;
+}
+.dots{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 12px;
+    margin-bottom: 60px;
+}
+.contnet-container .section3-contnet{
+    margin-top: 50px;
+}
+.therd-section{
+    margin-top: 32px;
+}
+.therd-section .container{
+    font-size: 23px;
+}
+.contnet-container p{
+    line-height: 40px;
+}
+
+.container .footer{
+    align-items: center;
+    height: 75.8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.light-mode{
+    display: flex;
+    background-color: white;
+    /* border: 2px solid #000; */
+}
+.light-mode .active{
+    border-radius: 50px;
+    border: 2px solid #000;
+}
+.light-mode img{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 620px) {
+    .container{
+        width: 500px;
+        margin: auto;
+    }
+    .logo{
+        padding-top: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    main .container .photography{
+        padding-top:90px;
+        width: fit-content;
+        padding-left: 20px;
+        position: relative;
+    }
+    main .container .photography h1{
+        font-size: 30px;
+        color: #fff128;
+    }
+
+    main .container .photography p{
+        font-size: 20px;
+        color: #fff ;
+    }
+    
+    main .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 500px;
+        height: 300px;
+    }
+    .container .cards .card h2{
+        font-size: 21px;
+        margin: 2px;
+
+    }
+    .container .cards .card p{
+        font-size: 17px;
+        margin: 2px;
+
+    }
+    .container .cards .card .sub-conatiner {
+        font-size: 17px;
+        margin: 2px;
+    }
+    .cards .card:hover{
+        transform: none;
+        /* font-weight: bold; */
+        border: 1px solid #000;
+    }
+    .cards {
+        display: block;
+        margin-top: 50px;
+    }
+    .container-of-title .sup-con h1{
+        font-size: 22px;
+    }
+    .container-of-title .sup-con p{
+        font-size: 18px;
+    }
+    .container-of-title p{
+        font-size: 18px;
+    }
+    .new-page img{
+        width: 500px;
+        height: 300px;
+    }
+    .section-content p{
+        font-size: 16x;
+    }
+    .dots{
+        font-size: 38px;
+    }
+    .second-section .container h1{
+        font-size: 26px;
+    }
+    .contnet-container p{
+        font-size: 20px;
+    }
+    .section2-content a{
+        font-size: 21px;
+    }
+    .therd-section .container h1{
+        font-size: 26px;
+    }
+    .contnet-container .container p{
+        font-size: 20px;
+    }
+    .footer p{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .soctial p{
+
+        justify-content: space-around;
+    }
+}
